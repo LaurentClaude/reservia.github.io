@@ -1,0 +1,1082 @@
+body {
+    margin: 0px;
+    max-width: 100%;
+    font-family: 'Raleway', sans-serif;
+    background-color: #FFFFFF;
+}
+/*Version desktop*/
+/*Définition de la page et de la police*/
+
+
+
+/*Définition du bloc de "Recherche" à "Activité" */
+main {
+    width: 92.8%;
+    /*alignt des blocs*/
+    margin: auto;
+    margin-top: 170px;
+}
+
+/*Suppresion des barres sous liens*/
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*Taille de police des liens et phrase de"info"*/
+p {
+    font-size: 1.1em;
+}
+
+/*Taille des titres et placement*/
+h2 {
+    font-size: 1.8em;
+    margin: 0px;
+}
+
+/*Couleur icone Info*/
+i {
+    color: #0065fc;
+}
+
+/*Mise en gris étoiles fianles si présentes*/
+.fa-star-grey {
+    color: #d9d9d9;
+}
+
+/* Mise en place de l'ombre sur les cards
+ et de la forme du curseur "une main"*/
+figure {
+    box-shadow: 8px 10px 5px #e7e7e7;
+    cursor: pointer;
+}
+
+
+/*Header*/
+/*Mise en page du Header*/
+header {
+    height: 120px;
+    /*hauteur de page*/
+    padding: 0% 3.6% 0% 3.6%;
+    /*Logo, liens*/
+    background-color: #FFFFFF;
+    /*Position Logo et liens*/
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    /*Flexbox*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Taille du logo*/
+#logo {
+    width: 130%;
+}
+
+/*Mise en place liens navigation*/
+nav {
+    width: 600px;
+    text-align: center;
+    align-self: flex-start;
+    /*Alignt vertic*/
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.nav_liens {
+    padding: 6% 6% 0px 6%;
+    font-size: 1.33em;
+    color: black;
+    border-top: 3px #FFFFFF solid;
+    font-weight: normal;
+}
+
+.nav_liens-blue {
+    font-weight: bold;
+    color: #0065FC;
+}
+
+.nav_liens:hover {
+    border-color: #0065FC;
+    color: #0065FC;
+}
+
+/*FIN Mise en place liens navigation*/
+
+/*cible section le premier élément fils de section*/
+main section:first-child {
+    padding-left: 3px;
+}
+
+/*Titre "Trouvez votre hébergement"*/
+.titre h2 {
+    font-size: 1.764em;
+    margin-bottom: -11px;
+    margin-top: -20px;
+}
+
+/*Mise en place barre rechercher*/
+/*Formulaire de recherche*/
+form {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+}
+
+/*Mise en forme icone*/
+.fa-map-marker-alt {
+    padding: 23px;
+    color: black;
+    font-size: 1.4em;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #F2F2F2;
+}
+
+/*Case "Marseille, France"*/
+.search-input {
+    width: 18%;
+    height: 68px;
+    padding-left: 20px;
+    font-size: 1.44em;
+    font-weight: bold;
+    border: 2px #f2f2f2 solid;
+}
+
+/*Bouton de recherche*/
+.search-btn {
+    width: auto;
+    height: 66px;
+    background-color: #0065FC;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    border: 0px white none;
+    border-top-right-radius: 21px;
+    border-bottom-right-radius: 21px;
+}
+
+.fa-search {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* Effet au survol du bouton*/
+.search-btn:hover {
+    background-color: #c5dcff;
+    color: #0065fc;
+}
+
+/*FIN Mise en place barre rechercher*/
+
+/*Mise en place barre des Filtres*/
+.box-filters {
+    margin-top: 1%;
+    width: 70%;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/*cible le premier élément p*/
+.box-filters p:first-child {
+    font-size: 22.5px;
+    padding: 0px 20px 0px 9px;
+}
+
+/*Mise en place des Filtres*/
+.filter {
+    height: 59px;
+    border: 2px #d9d9d9 solid;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding-right: 2.5%;
+    font-size: 1.4em;
+}
+
+/*Icones des filtres*/
+.filter i {
+    width: 22px;
+    height: 22px;
+    padding: 22px;
+    margin: 0px 11px 0px -2px;
+    border-radius: 50px;
+    background-color: #deebff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*Changement apparence au survol des filtres*/
+.filter:hover {
+    background-color: #0065fc;
+    color: white;
+}
+
+/*FIN Mise en place barre des Filtres*/
+
+/*Mise en place ligne info*/
+.info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1.2% 0px 0px 7px;
+}
+
+.fa-info {
+    height: 26px;
+    width: 23px;
+    border: 1px solid grey;
+    border-radius: 50%;
+    padding-left: .7em;
+    margin-right: 1em;
+    padding-top: .3em;
+}
+
+/*Les plus populaires*/
+.hebergements {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 3%;
+    height: 805px;
+}
+
+.hebergements h3:last-child {
+    font-size: 1.4em;
+    margin: 5% 0px 0px 5px;
+}
+
+/*Couleur du fond et bordure Hébergement, populaires */
+aside,
+article {
+    background-color: #F2F2F2;
+    border-radius: 25px;
+    padding: 2.9%;
+}
+
+/*Flexbox et hauteur Hébergement, populaires */
+.plus_populaire-box,
+.hebergements-box {
+    height: 91%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Images et cards Hébergement, populaires*/
+.plus_populaire-box figure,
+.hebergements-box figure {
+    margin: 0px;
+    border: 5px white solid;
+    border-radius: 25px;
+    overflow: hidden;
+    /*dépassement du contenu*/
+    display: flex;
+}
+
+/*Fond Hébergement, populaires*/
+.plus_populaire-box figcaption,
+.hebergements-box figcaption {
+    background-color: white;
+}
+
+/*Taille police h3 Hébergement, populaires*/
+.plus_populaire-box figcaption h3,
+.hebergements-box figcaption h3 {
+    font-size: 1.3em;
+}
+
+/*Taille police p Hébergement, populaires*/
+.plus_populaire-box figcaption p,
+.hebergements-box figcaption p {
+    font-size: 1.1em;
+}
+
+/*Espacement des étoiles*/
+.stars {
+    display: flex;
+}
+
+/*Espacement bloc Hébergement et populaires*/
+aside {
+    width: 25.5%;
+}
+
+/*Espacement Titre Les plus populaires et icone*/
+.populaire_titre {
+    margin: 3px 0px 31px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*Couleur icone*/
+.fa-chart-line {
+    color: black;
+}
+
+/*Les plus populaires bloc*/
+.plus_populaire-box {
+    flex-direction: column;
+}
+.plus_populaire-box img{
+    flex-direction: column;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+}
+/*Images*/
+.plus_populaire-box figure {
+    height: 27%;
+    justify-content: flex-end;
+}
+
+/*Légende*/
+.plus_populaire-box figcaption {
+    min-width: 50%;
+    padding: 0px 25px 0px 25px;
+}
+
+/*Titre*/
+.plus_populaire-box figcaption h3 {
+    margin: 15px 0px 0px 0px;
+}
+
+/*Texte*/
+.plus_populaire-box figcaption p {
+    margin: 10px 0px 24% 0px;
+}
+
+/*FIN Les plus populaires bloc*/
+
+/*Hébergement à Marseille*/
+article {
+    width: 60%;
+}
+
+/*Titre*/
+article h2 {
+    margin: 3px 0px 30px 0px;
+}
+
+/*Hébergement à Marseille bloc*/
+/*Contennant*/
+.hebergements-box {
+    height: 78.5%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+/*Image*/
+.hebergements-box figure {
+    width: 29.5%;
+    height: 45%;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+/*Titre*/
+.hebergements-box figcaption {
+    width: 100%;
+    min-height: 41%;
+    padding: 0px 10px 0px 10px;
+    border-radius: 0px 0px 15px 15px;
+}
+/*Titre*/
+.hebergements-box figcaption h3 {
+    margin: 10px 0px 0px 0px;
+}
+/*Texte*/
+.hebergements-box figcaption p {
+    margin: 7px 0px 10px 0px;
+}
+
+
+/*Activités à Marseille*/
+/*Hauteur*/
+#activity {
+    margin-top: 4.1%;
+    height: 640px;
+}
+/*Contennant*/
+.activity-box {
+    height: 90%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+/*Mise ne forme cards "Activités" factorisé*/
+.height-items,
+#activity figure {
+    margin: 0px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+}
+/*Largeur Activités*/
+.height-items {
+    width: 22.6%;
+}
+/*Cards Activités*/
+.box-items {
+    justify-content: space-between;
+    padding-right: 8px;
+}
+/*Images Activités*/
+#activity figure {
+    justify-content: flex-end;
+    overflow: hidden;
+    /*dépassement du contenu*/
+}
+/*Hauteur images*/
+.pomeges {
+    height: 52%;
+}
+/*Hauteur images*/
+.frioul {
+    height: 38%;
+}
+.garde {
+    height: 43.5%;
+}
+/*Hauteur images*/
+.longchamp {
+    height: 47%;
+}
+/*Mise page "Activités"*/
+.activity-box figcaption {
+    font-size: 1.3em;
+    font-weight: bold;
+    min-height: 9%;
+    padding: 6% 0px 0px 5.8%;
+}
+/*Mise page*/
+.pomeges figcaption {
+    min-height: 14%;
+    padding: 6.5% 0px 0px 7%;
+}
+/*Mise page*/
+.frioul figcaption {
+    min-height: 23%;
+    padding: 6% 0px 0px 7.5%;
+}
+/*Mise page*/
+.garde figcaption {
+    min-height: 18%;
+    padding: 6.5% 0px 0px 8%;
+}
+/*Mise page*/
+.longchamp figcaption {
+    min-height: 18.5%;
+    padding: 7% 0px 0px 7.5%;
+}
+/*Mise page groupe de 2 images */
+.height-picture {
+    min-height: 100%;
+    width: max-content;
+}
+/*FIN Activités à Marseille*/
+
+/* PIED DE PAGE */
+footer {
+    margin-top: 4%;
+    height: 248px;
+    padding: 2% 25.5% 0% 3.5%;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+}
+/*Footer titre*/
+footer h3 {
+    font-size: 1.4em;
+    margin-bottom: 27px;
+}
+/*Footer texte*/
+footer p {
+    font-size: 1.26em;
+    margin: 0px 0px 15px 0px;
+}
+
+/*FIN PIED DE PAGE */
+
+
+/*___________________Version Tablette______________________________*/
+
+@media screen and (max-width: 1024px) {
+
+    /*Configuration général*/
+main {
+    margin-top: 220px;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+h2 {
+    font-size: 1.75em;
+}
+
+
+/*Header*/
+header {
+    height: 200px;
+    align-items: flex-start;
+    padding: 0px;
+}
+
+#logo {
+    margin: 0% 0% 0% 5%;
+    width: 15%;
+    position: absolute;
+    top: 10%;
+}
+
+nav {
+    width: 100%;
+    align-self: flex-end;
+    flex-wrap: wrap-reverse;
+}
+
+.nav_liens {
+    padding: 0% 0% 4.4% 0%;
+    border-top-style: none;
+    border-bottom: 3px #f2f2f2 solid;
+    font-size: 1.25em;
+    width: 33.3%;
+}
+
+
+/*Recherche*/
+/*titre*/
+.titre h2 {
+    font-size: 1.6em;
+    margin-bottom: 0px;
+}
+
+/*Formulaire de recherche*/
+.fa-map-marker-alt {
+    padding: 21px;
+}
+
+.search-input {
+    width: 60%;
+    height: 65px;
+    padding-left: 17px;
+    font-size: 1.25em;
+}
+
+.search-btn {
+    width: auto;
+    font-size: 1.3em;
+}
+
+/*Filtres*/
+.box-filters {
+    margin-top: 3%;
+    width: 100%;
+}
+
+.box-filters p:first-child {
+    padding: 0px 0px 0px 1px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.filter {
+    height: 50px;
+    padding-right: 2%;
+    font-size: 1.15em;
+    margin: 16px 0px 0px 0px;
+}
+
+.filter i {
+    width: 12px;
+    height: 12px;
+}
+
+/*Info*/
+.info {
+    margin: 10% 0px 0px 0px;
+}
+
+/*Hébergement*/
+.hebergements {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 7.5%;
+    height: 1700px;
+}
+
+.hebergements h3:last-child {
+    font-size: 1.3em;
+    margin: 7.5% 0px 0px 0px;
+}
+
+aside,
+article {
+    border-radius: 0px;
+    padding: 5.5%;
+    width: 89.2%;
+}
+
+.plus_populaire-box figcaption h3,
+.hebergements-box figcaption h3 {
+    font-size: 1.3em;
+}
+
+.plus_populaire-box figcaption p,
+.hebergements-box figcaption p {
+    font-size: 1em;
+}
+
+/*Les plus populaires*/
+aside {
+    height: 35%;
+}
+
+/*Titre*/
+.populaire_titre {
+    margin: 10px 0px 29px 0px;
+}
+
+/*Contenu*/
+
+.plus_populaire-box {
+    height: 90%;
+    align-items: center;
+}
+
+.plus_populaire-box figure {
+    height: 30%;
+    width: 98%;
+}
+
+.plus_populaire-box img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+}
+
+.plus_populaire-box figcaption {
+    padding: 0px 18px;
+}
+
+.plus_populaire-box figcaption p {
+    margin: 10px 0px 15% 0px;
+}
+
+/*Hébergement à Marseille*/
+article {
+    background-color: white;
+    height: 57%;
+}
+
+/*Titre*/
+article h2 {
+    margin: 3% 0px 20px 0px;
+}
+
+/*Contenu*/
+.hebergements-box {
+    height: 80%;
+}
+
+.hebergements-box figure {
+    width: 47%;
+    height: 30%;
+}
+
+.hebergements-box figcaption p {
+    margin: 4px 0px 6px 0px;
+}
+
+
+/*Activité*/
+#activity {
+    margin-top: 3%;
+    height: 1300px;
+}
+
+.activity-box {
+    height: 95%;
+    margin-top: 5%;
+    flex-wrap: wrap;
+}
+
+.height-items {
+    width: 48%;
+    height: 48%;
+}
+
+.pomeges,
+.frioul,
+.garde,
+.longchamp {
+    height: 48%;
+}
+
+.activity-box figcaption {
+    font-size: 1.3em;
+    font-weight: bold;
+    min-height: 15%;
+    display: flex;
+    align-items: center;
+    padding: 0% 7%;
+}
+
+.pomeges figcaption,
+.frioul figcaption,
+.garde figcaption,
+.longchamp figcaption {
+    min-height: 25%;
+}
+
+
+/*Footer*/
+footer {
+    margin-top: 2%;
+    height: 248px;
+    padding: 0% 3.5%;
+}
+
+footer div {
+    width: 30%
+}
+
+footer h3 {
+    font-size: 1.25em;
+}
+
+footer p {
+    font-size: 1.15em;
+}
+}
+
+/*___________________Version Mobile______________________________*/
+
+@media screen and (max-width: 600px) {
+
+    /*Configuration général*/
+    body {
+        background-color: #FFFFFF;
+    }
+
+    main {
+        width: 100%;
+        margin-top: 220px;
+    }
+
+    p {
+        font-size: 1.085em;
+    }
+
+    h2 {
+        font-size: 1.51em;
+    }
+
+    figure {
+        box-shadow: 0px 3px 3px #e7e7e7;
+    }
+
+    /*Header*/
+    header {
+        height: 200px;
+        align-items: flex-start;
+        padding: 0px;
+    }
+
+    #logo {
+        margin: 0% 0% 0% 5%;
+        width: 27%;
+        position: absolute;
+        top: 17%;
+    }
+
+    nav {
+        width: 100%;
+        height: 100%;
+        flex-wrap: wrap-reverse;
+        align-content: space-between;
+    }
+
+    .nav_liens {
+        padding: 0% 0% 4.4% 0%;
+        border-top-style: none;
+        border-bottom: 3px #f2f2f2 solid;
+        font-size: 1.09em;
+        width: 50%;
+    }
+
+    .nav_liens-blue {
+        padding: 9.8% 6% 0px 6%;
+        width: auto;
+        position: absolute;
+        right: 0px;
+        border-top: 3px #FFFFFF solid;
+        border-bottom-style: none;
+    }
+
+
+    /*Recherche*/
+    main section:first-child {
+        padding-left: 0px;
+        width: 89%;
+        margin: auto;
+    }
+
+    /*titre*/
+    .titre h2 {
+        font-size: 1.5em;
+        margin-bottom: -2px;
+    }
+
+    /*Formulaire de recherche*/
+    form {
+        margin-top: 38px;
+    }
+
+    .fa-map-marker-alt {
+        padding: 18px 21px;
+        font-size: 1.3em;
+    }
+
+    .search-input {
+        width: 75%;
+        height: 57px;
+        padding-left: 17px;
+        font-size: 1.25em;
+    }
+
+    .search-btn {
+        position: absolute;
+        clip: rect(1px, 1px, 1px, 1px);
+    }
+
+    .fa-search {
+        position: static;
+        clip: auto;
+        color: white;
+        padding: 20px;
+        background-color: #0065FC;
+        border: 0px white none;
+        border-radius: 19px;
+        margin-left: -5%;
+        cursor: pointer;
+    }
+
+    .fa-search:hover {
+        background-color: #c5dcff;
+        color: #0065fc;
+    }
+
+
+    /*Filtres*/
+    .box-filters {
+        margin-top: 4.5%;
+        width: 100%;
+    }
+/*Organisation des filtres*/
+    .box-filters p:first-child {
+        font-size: 19.5px;
+        padding: 0px 0px 0px 1px;
+        width: 100%;
+        margin-bottom: 0px;
+    }
+
+    .filter {
+        height: 50px;
+        padding-right: 6%;
+        font-size: 1.1em;
+        margin: 16px 0px 0px 0px;
+    }
+
+    .filter i {
+        width: 12px;
+        height: 12px;
+    }
+
+    /*Info*/
+    .info {
+        align-items: flex-start;
+        margin: 10.5% 0px 0px 0px;
+    }
+
+    .fa-info {
+        margin-right: 3%;
+    }
+
+
+    /*Hébergement*/
+    .hebergements {
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 10%;
+        height: 2200px;
+    }
+
+    .hebergements h3:last-child {
+        font-size: 1.25em;
+        margin: 8.5% 0px 0px 0px;
+    }
+
+    aside,
+    article {
+        border-radius: 0px;
+        padding: 5.5%;
+        width: 89.2%;
+    }
+    
+    .plus_populaire-box figcaption h3,
+    .hebergements-box figcaption h3 {
+        font-size: 1.1em;
+    }
+
+    .plus_populaire-box figcaption p,
+    .hebergements-box figcaption p {
+        font-size: 0.95em;
+    }
+
+
+    .fa-star {
+        font-size: 0.85em;
+    }
+
+    /*Les plus populaires*/
+    aside {
+        height: 27%;
+    }
+
+    /*Titre*/
+    .populaire_titre {
+        margin: 20px 0px 29px 0px;
+    }
+
+    /*Contenu*/
+
+    .plus_populaire-box {
+        height: 85%;
+    }
+
+    .plus_populaire-box figure {
+        height: 30%;
+    }
+
+    .plus_populaire-box figcaption {
+        padding: 0px 18px;
+    }
+
+    .plus_populaire-box figcaption h3 {
+        margin: 12px 0px 0px 0px;
+    }
+
+    .plus_populaire-box figcaption p {
+        margin: 7px 0px 25% 0px;
+    }
+
+    /*Hébergement à Marseille*/
+    article {
+        background-color: white;
+        height: 69%;
+    }
+
+    /*Titre*/
+
+    article h2 {
+        margin: 6% 0px 20px 0px;
+    }
+
+    /*Contenu*/
+    .hebergements-box {
+        height: 91.5%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .hebergements-box figure {
+        width: 96%;
+        height: 15.5%;
+    }
+
+    .hebergements-box figcaption p {
+        margin: 5px 0px 8px 0px;
+    }
+
+
+    /*Activité*/
+    #activity {
+        margin-top: 2%;
+        height: 1450px;
+        padding: 5.5%;
+    }
+
+    .activity-box {
+        height: 95.6%;
+        flex-direction: column;
+    }
+
+    .height-items {
+        width: 100%;
+        height: 15%;
+    }
+
+    .box-items {
+        padding-right: 0px;
+        height: 32.5%;
+    }
+
+    .pomeges,
+    .frioul,
+    .garde,
+    .longchamp {
+        height: 48%;
+    }
+
+    .activity-box figcaption,
+    .pomeges figcaption,
+    .frioul figcaption,
+    .garde figcaption,
+    .longchamp figcaption {
+        font-size: 1.1em;
+        min-height: 19%;
+    }
+
+    .height-picture {
+        height: max-content;
+        width: max-content;
+    }
+
+
+    /*Footer*/
+    footer {
+        margin-top: 6%;
+        height: 468px;
+        padding: 7.6% 0% 11.25% 7.5%;
+        flex-direction: column;
+    }
+
+    footer div {
+        width: auto;
+    }
+
+    footer h3 {
+        font-size: 1.24em;
+        margin-bottom: 19px;
+    }
+
+    footer p {
+        font-size: 1.1em;
+        margin: 0px 0px 13.5px 0px;
+    }
+}
